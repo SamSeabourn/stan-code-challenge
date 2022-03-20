@@ -1,13 +1,15 @@
-import "./globals.css";
-import image from "./logo.svg";
+import { Layout } from './components/Layout';
+import { Routes } from './components/Routes';
+import { RouteList } from './routeList';
 
-export const App = () => {
-  const num = 0;
-
+const App = () => {
   return (
-    <>
-      <h1>Hello world</h1>
-      <img src={image} alt="logo" width="300" />
-    </>
+    <div className="app">
+      <Layout>
+        <Routes routesList={RouteList} />
+      </Layout>
+    </div>
   );
 };
+
+export { App };

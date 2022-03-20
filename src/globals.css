@@ -1,9 +1,11 @@
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: red;
+  margin: 0px;
+}
+
+.app {
+  background-color: #141414;
 }
