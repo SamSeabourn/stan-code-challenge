@@ -1,0 +1,10 @@
+.program-list {
+  list-style: none;
+  display: inline-flex;
+}
+
+.program-card {
+  background-color: red;
+  width: 154px;
+  height: 202px;
+}

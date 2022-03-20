@@ -1,9 +1,16 @@
+import { useEffect, useState } from 'react';
+import { getPrograms } from '../api/ProgramAPI';
+import { Carousel } from '../components/Carousel';
+import { Program } from '../types';
+
 const Home = () => {
-  return (
-    <>
-      <h1>Home</h1>
-    </>
-  );
+  const [programList, setProgramList] = useState<Array<Program>>([]);
+
+  useEffect(() => {
+    getPrograms().then((res: Array<Program>) => setProgramList(res));
+  }, []);
+
+  return <Carousel programList={programList} />;
 };
 
 export { Home };

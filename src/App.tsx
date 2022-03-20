@@ -1,7 +1,7 @@
 import { RouteList } from './RouteList';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
-import { RouteType } from './components/Routes/Routes.types';
+import { Route as RouteType } from './types';
 import { Home } from './containers/Home';
 
 const App = () => {
