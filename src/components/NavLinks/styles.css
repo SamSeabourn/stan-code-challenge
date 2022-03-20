@@ -1,0 +1,17 @@
+.linkList {
+  list-style: none;
+  display: flex;
+  margin-left: 3rem;
+}
+
+.linkList > li {
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 3rem;
+  font-weight: bold;
+}
+
+.linkList > li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
