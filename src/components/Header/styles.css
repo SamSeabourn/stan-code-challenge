@@ -1,11 +1,11 @@
-.navBar {
-  height: 10rem;
+.navbar {
+  height: 16rem;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
 .logo {
-  margin-left: 2rem;
+  margin-left: 6rem;
   height: 5rem;
 }

@@ -15,9 +15,6 @@ const App = () => {
                 {r.component}
               </Route>
             ))}
-            <Route path="/">
-              <Home />
-            </Route>
           </Switch>
         </Layout>
       </div>

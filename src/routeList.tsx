@@ -1,16 +1,23 @@
-import { RouteType } from './components/Routes/Routes.types';
+import { Route as RouteType } from './types';
 import { Home } from './containers/Home';
+import { Error } from './containers/Error';
 import { Program } from './containers/Program';
 
 export const RouteList: Array<RouteType> = [
   {
     pathName: '/home',
     component: <Home />,
-    description: 'Back to home page',
   },
   {
     pathName: '/program',
     component: <Program />,
-    description: 'View program details',
+  },
+  {
+    pathName: '/error',
+    component: <Error />,
+  },
+  {
+    pathName: '/',
+    component: <Home />,
   },
 ];

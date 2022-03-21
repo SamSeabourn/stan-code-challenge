@@ -13,5 +13,4 @@ export type Program = {
 export type Route = {
   pathName: string;
   component: React.ReactNode;
-  description: string;
 };

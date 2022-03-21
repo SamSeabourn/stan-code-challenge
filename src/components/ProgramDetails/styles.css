@@ -1,0 +1,36 @@
+.program-details-container {
+  padding-left: 6rem;
+  display: flex;
+}
+
+.program-image {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: #606060;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 512px 768px;
+  width: 512px;
+  height: 768px;
+  margin-right: 1em;
+}
+
+.program-description {
+  color: white;
+  font-weight: 400;
+  width: 55%;
+  margin-left: 4rem;
+  transform: translateY(-3rem);
+}
+
+.program-description > h1 {
+  margin: 0px;
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.program-description > h4,
+.program-description > p {
+  margin-top: 0px;
+  font-size: 2.5rem;
+}

@@ -2,6 +2,14 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   margin: 0px;
 }
@@ -9,4 +17,5 @@ body {
 .app {
   background-color: #141414;
   height: 100vh;
+  overflow-x: hidden;
 }
