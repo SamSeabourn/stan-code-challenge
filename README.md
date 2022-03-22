@@ -8,7 +8,7 @@ The requirements for this challenge are located [here](https://github.com/Stream
 
 To build this custom Carousel component I opted for a lean approach for and used a minimal React / CSS / Cutom Webpack stack.
 
-![](screen.PNG)
+![](screen1.png)
 
 ### **Technology breakdown**
 
