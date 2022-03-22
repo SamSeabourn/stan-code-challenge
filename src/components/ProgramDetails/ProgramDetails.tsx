@@ -1,23 +1,8 @@
-import { useEffect } from 'react';
 import { IProgramDetailsProps } from './ProgramDetails.types';
-import { useHistory } from 'react-router-dom';
 import './styles.css';
 
-function ProgramDetails({ program }: IProgramDetailsProps) {
-  const history = useHistory();
-
-  const handleKeystroke = (e: KeyboardEvent) => {
-    if (e.code === 'Backspace') history.push('/home');
-  };
-
-  useEffect(() => {
-    window.addEventListener('keydown', handleKeystroke);
-    return () => {
-      window.removeEventListener('keydown', handleKeystroke);
-    };
-  });
-
-  const { title, description, image, rating, genre, year } = program;
+const ProgramDetails = ({ program, isLoading }: IProgramDetailsProps) => {
+  const { title, description, image, rating, genre, year } = program ?? {};
   return (
     <div className="program-details">
       <div
@@ -26,12 +11,28 @@ function ProgramDetails({ program }: IProgramDetailsProps) {
         aria-label={title}
       />
       <div className="program-details__description-wrapper">
-        <h1 className="program-details__title">{title}</h1>
-        <h4 className="program-details__title">{`${rating} | ${year} | ${genre}`}</h4>
-        <p className="program-details__description">{description}</p>
+        <h1
+          className={`program-details__title ${
+            isLoading ? 'program-details__title--loading' : ''
+          }`}
+        >
+          {title}
+        </h1>
+        <h4
+          className={`program-details__stats ${
+            isLoading ? 'program-details__stats--loading' : ''
+          }`}
+        >{`${rating} | ${year} | ${genre}`}</h4>
+        <p
+          className={`program-details__description ${
+            isLoading ? 'program-details__description--loading' : ''
+          }`}
+        >
+          {description}
+        </p>
       </div>
     </div>
   );
-}
+};
 
 export { ProgramDetails };

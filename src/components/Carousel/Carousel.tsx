@@ -13,7 +13,7 @@ const Carousel = ({ programList }: ICarouselProps) => {
   const handleKeystroke = (e: KeyboardEvent) => {
     if (e.code === 'Enter') {
       history.push({
-        pathname: '/program',
+        pathname: `/program/${programList[selectionIndex].id}`,
         state: {
           program: programList[selectionIndex],
         },
@@ -24,11 +24,11 @@ const Carousel = ({ programList }: ICarouselProps) => {
     );
   };
 
-  const handleSelect = (i: number) => {
+  const handleSelect = (program: Program) => {
     history.push({
-      pathname: '/program',
+      pathname: `/program/${program.id}`,
       state: {
-        program: programList[i],
+        program: program,
       },
     });
   };
@@ -56,7 +56,7 @@ const Carousel = ({ programList }: ICarouselProps) => {
         return (
           <li
             key={`program-${p.id}`}
-            onClick={() => handleSelect(i)}
+            onClick={() => handleSelect(p)}
             className={`carousel__program ${
               i === selectionIndex ? 'carousel__program--selected' : ''
             }`}

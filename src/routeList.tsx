@@ -9,7 +9,7 @@ export const RouteList: Array<RouteType> = [
     component: <Home />,
   },
   {
-    pathName: '/program',
+    pathName: '/program/:id',
     component: <Program />,
   },
   {

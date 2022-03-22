@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getPrograms } from '../api/ProgramAPI';
+import { getAllPrograms } from '../api/ProgramAPI';
 import { Carousel } from '../components/Carousel';
 import { Program } from '../types';
 import { useHistory } from 'react-router-dom';
@@ -9,7 +9,7 @@ const Home = () => {
   const history = useHistory();
 
   useEffect(() => {
-    getPrograms().then((res: Array<Program>) => {
+    getAllPrograms().then((res: Array<Program>) => {
       if (res.length === 0) {
         history.push('./error');
       } else {

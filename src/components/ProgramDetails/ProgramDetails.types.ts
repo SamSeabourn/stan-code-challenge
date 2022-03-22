@@ -1,5 +1,6 @@
 import { Program } from '../../types';
 
 export interface IProgramDetailsProps {
-  program: Program;
+  program: Program | undefined;
+  isLoading: boolean;
 }
