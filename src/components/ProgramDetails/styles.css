@@ -9,7 +9,7 @@
   background-color: #606060;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 512px 768px;
+  background-size: cover;
   width: 512px;
   height: 768px;
   margin-right: 1em;
@@ -33,4 +33,36 @@
 .program-details__description {
   margin-top: 0px;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .program-details {
+    padding-left: 3rem;
+  }
+
+  .program-details__image {
+    width: 330px;
+    height: 495px;
+    margin-right: 1em;
+  }
+
+  .program-details__description-wrapper {
+    color: white;
+    font-weight: 400;
+    width: 55%;
+    margin-left: 2rem;
+    transform: translateY(-1.5rem);
+  }
+
+  .program-details__title {
+    margin: 0px;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .program-details__stats,
+  .program-details__description {
+    margin-top: 2.25rem;
+    font-size: 1.25rem;
+  }
 }

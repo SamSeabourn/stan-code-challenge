@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Program } from '../../types.d';
+import { Program } from '../../types';
 import { ICarouselProps } from './Carousel.types';
 import { getNavigationIndex } from './helpers';
 import { useHistory } from 'react-router-dom';

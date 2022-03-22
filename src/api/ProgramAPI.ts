@@ -8,6 +8,7 @@ export const getPrograms = async () => {
     })
     .catch((err) => {
       console.error(err);
+      window.location.replace(`${window.location.host}/error`);
       return [];
     });
   return result;

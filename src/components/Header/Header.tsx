@@ -10,6 +10,7 @@ const Header = () => {
         <img
           className="header__logo"
           src={logo}
+          alt={'Stan Logo'}
         />
       </Link>
       <NavLinks />

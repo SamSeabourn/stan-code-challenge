@@ -15,3 +15,14 @@
 .link-list__link--active {
   opacity: 1;
 }
+
+@media screen and (max-width: 1280px) {
+  .link-list {
+    margin-left: 1.5rem;
+  }
+
+  .link-list__link {
+    font-size: 1.75rem;
+    margin-right: 2rem;
+  }
+}

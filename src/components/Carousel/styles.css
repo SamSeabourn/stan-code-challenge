@@ -15,23 +15,40 @@
   background-color: #606060;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 512px 768px;
+  background-size: cover;
+  -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 60%);
+  box-shadow: 0 1px 5px rgb(0 0 0 / 60%);
   width: 512px;
   height: 768px;
   margin-right: 1em;
   cursor: pointer;
 }
 
-.carousel__program:hover {
+.carousel__program:hover,
+.carousel__program--selected {
   background-repeat: no-repeat;
   background-color: #141414;
   background-size: 493px 747px;
   border: 5px solid #0171f9;
 }
 
-.carousel__program--selected {
-  background-repeat: no-repeat;
-  background-color: #141414;
-  background-size: 493px 747px;
-  border: 5px solid #0171f9;
+@media screen and (max-width: 1280px) {
+  .carousel {
+    margin: 0 0 0 3rem;
+  }
+
+  .carousel--shift {
+    transform: translateX(-338px);
+  }
+
+  .carousel__program {
+    width: 330px;
+    height: 495px;
+    margin-right: 0.5rem;
+  }
+
+  .carousel__program:hover,
+  .carousel__program--selected {
+    background-size: 304px 470px;
+  }
 }

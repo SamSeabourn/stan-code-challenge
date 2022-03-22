@@ -9,3 +9,14 @@
   margin-left: 6rem;
   height: 5rem;
 }
+
+@media screen and (max-width: 1280px) {
+  .header {
+    height: 10rem;
+  }
+
+  .header__logo {
+    margin-left: 3rem;
+    height: 3.5rem;
+  }
+}
