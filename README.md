@@ -4,7 +4,8 @@
 
 ### **About**
 
-The requirements for this challenge are located [here](https://github.com/StreamCo/tv-coding-challenge)
+The requirements for this challenge are located [here](https://github.com/StreamCo/tv-coding-challenge).
+
 To build this custom Carousel component I opted for a lean approach for and used a minimal React / CSS / Cutom Webpack stack.
 
 ![](screen.PNG)
