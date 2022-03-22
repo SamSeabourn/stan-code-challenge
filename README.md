@@ -4,24 +4,25 @@
 
 ### **About**
 
-The requirements for the challenge are located [here](https://github.com/StreamCo/tv-coding-challenge)
-To build this custom Carousel component I opted for a lean approach for and used a minimal React / CSS / Webpack stack.
+The requirements for this challenge are located [here](https://github.com/StreamCo/tv-coding-challenge)
+To build this custom Carousel component I opted for a lean approach for and used a minimal React / CSS / Cutom Webpack stack.
+
+![](screen.PNG)
 
 ### **Technology breakdown**
 
 ##### Custom webpack conjfig
 
-I opted for a custom webpack config as this gave me full control of the project and allowed me to add libraries as I needed them as opposed to bringing everything from CRA over. It also allowed me to specify a build 'dist' and configure this process.
+I opted for a custom webpack config as this gives me full control of the project and allowed me to add libraries as I need them as opposed to bringing everything from CRA over. 
+It also allows me to specify a build 'dist' and configure this process.
 
 ##### React Router Dom
 
-I used react-router-dom because It is straightforward to get routing working and allows me to pass state without leaning on a state management library.
-
-![](screen.PNG)
+I have used react-router-dom because It is straightforward to get routing working and allows me to pass state without needing to rely on a state management library.
 
 ##### 🍦 Vanilla CSS
 
-As the application was basic so I have opted for using vanilla CSS following the BEM convention and utilizing basic media queries. Although there was the option of using styled components it seemed overkill as there isn't much need for the JS to interact with the CSS
+As the application was basic in terms of styling I have opted for using vanilla CSS following the BEM convention and utilizing basic media queries. Although there is the option of using styled components it seemed overkill as there isn't much need for the JS to interact with the CSS
 
 ### **Installation Instructions**
 
@@ -52,7 +53,7 @@ Installation via npm
 
 ### **Improvements**
 
-- Uplift the carousel to have a scroll event listener to scroll on scroll. This would also definitely need that debounce hook
+- Uplift the carousel to have a scroll event listener so the carousel can be controlled with the mouse wheel. This would also definitely need that debounce hook
 - Add CSS transitions to the carousel
 - Add better error handling
 - Improve accessibility
