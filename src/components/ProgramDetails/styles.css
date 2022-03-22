@@ -1,9 +1,9 @@
-.program-details-container {
+.program-details {
   padding-left: 6rem;
   display: flex;
 }
 
-.program-image {
+.program-details__image {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   background-color: #606060;
@@ -15,7 +15,7 @@
   margin-right: 1em;
 }
 
-.program-description {
+.program-details__description-wrapper {
   color: white;
   font-weight: 400;
   width: 55%;
@@ -23,14 +23,14 @@
   transform: translateY(-3rem);
 }
 
-.program-description > h1 {
+.program-details__title {
   margin: 0px;
   font-size: 6rem;
   font-weight: 400;
 }
 
-.program-description > h4,
-.program-description > p {
+.program-details__stats,
+.program-details__description {
   margin-top: 0px;
   font-size: 2.5rem;
 }

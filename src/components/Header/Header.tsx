@@ -5,10 +5,10 @@ import { NavLinks } from '../NavLinks';
 
 const Header = () => {
   return (
-    <div className="navbar">
+    <div className="header">
       <Link to="/home">
         <img
-          className="logo"
+          className="header__logo"
           src={logo}
         />
       </Link>

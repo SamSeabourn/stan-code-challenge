@@ -19,16 +19,16 @@ function ProgramDetails({ program }: IProgramDetailsProps) {
 
   const { title, description, image, rating, genre, year } = program;
   return (
-    <div className="program-details-container">
+    <div className="program-details">
       <div
         style={{ backgroundImage: `url("${image}")` }}
-        className="program-image"
+        className="program-details__image"
         aria-label={title}
-      ></div>
-      <div className="program-description">
-        <h1>{title}</h1>
-        <h4>{`${rating} | ${year} | ${genre}`}</h4>
-        <p>{description}</p>
+      />
+      <div className="program-details__description-wrapper">
+        <h1 className="program-details__title">{title}</h1>
+        <h4 className="program-details__title">{`${rating} | ${year} | ${genre}`}</h4>
+        <p className="program-details__description">{description}</p>
       </div>
     </div>
   );

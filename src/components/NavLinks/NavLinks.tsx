@@ -1,19 +1,21 @@
 import './styles.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { checkActiveRouteCSS } from './helpers';
 
 const NavLinks = () => {
-  const checkActiveRouteCSS = (pathName: string) => {
-    if (pathName === '') pathName = '/home';
-    return useLocation().pathname === pathName ? 'link active' : 'link';
-  };
-
   return (
-    <ul className="linkList">
+    <ul className="link-list">
       <Link to="/home">
-        <li className={checkActiveRouteCSS('/home')}>Home</li>
+        <li className={`link-list__link ${checkActiveRouteCSS('/home')}`}>
+          Home
+        </li>
       </Link>
-      <li className={checkActiveRouteCSS('/shows')}>TV Shows</li>
-      <li className={checkActiveRouteCSS('/movies')}>Movies</li>
+      <li className={`link-list__link ${checkActiveRouteCSS('/tvshows')}`}>
+        TV Shows
+      </li>
+      <li className={`link-list__link ${checkActiveRouteCSS('/movies')}`}>
+        Movies
+      </li>
     </ul>
   );
 };
