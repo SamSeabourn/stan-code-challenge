@@ -17,7 +17,7 @@ I opted for a custom webpack config as this gave me full control of the project 
 
 I used react-router-dom because It is straightforward to get routing working and allows me to pass state without leaning on a state management library.
 
-![](screen.png)
+![](screen1.png)
 
 ##### 🍦 Vanilla CSS
 
