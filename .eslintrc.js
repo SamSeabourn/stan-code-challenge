@@ -17,7 +17,6 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
-    // "plugin:eslint-comments/recommended",
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
@@ -29,6 +28,5 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'arrow-parens': 'as-needed',
   },
 };

@@ -1,11 +1,15 @@
-.program-list {
+.carousel {
   list-style: none;
   display: inline-flex;
   margin: 0 0 0 6rem;
   padding: 0px;
 }
 
-.program-card {
+.carousel--shift {
+  transform: translateX(-528px);
+}
+
+.carousel__program {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   background-color: #606060;
@@ -15,33 +19,19 @@
   width: 512px;
   height: 768px;
   margin-right: 1em;
-}
-
-.program-card:hover {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-color: #141414;
-  background-size: 493px 747px;
-  width: 512px;
-  height: 768px;
-  margin-right: 1em;
-  border: 5px solid #0171f9;
-}
-
-.selected {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-color: #141414;
-  background-size: 493px 747px;
-  width: 512px;
-  height: 768px;
-  margin-right: 1em;
-  border: 5px solid #0171f9;
   cursor: pointer;
 }
 
-.translate {
-  transform: translateX(-528px);
+.carousel__program:hover {
+  background-repeat: no-repeat;
+  background-color: #141414;
+  background-size: 493px 747px;
+  border: 5px solid #0171f9;
+}
+
+.carousel__program--selected {
+  background-repeat: no-repeat;
+  background-color: #141414;
+  background-size: 493px 747px;
+  border: 5px solid #0171f9;
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Program } from '../../types';
+import { Program } from '../../types.d';
 import { ICarouselProps } from './Carousel.types';
-import { navigationHandler } from './carouselHelpers';
+import { getNavigationIndex } from './helpers';
 import { useHistory } from 'react-router-dom';
 import './styles.css';
 
@@ -20,7 +20,7 @@ const Carousel = ({ programList }: ICarouselProps) => {
       });
     }
     setSelectionIndex(
-      navigationHandler(e.code, selectionIndex, programList.length)
+      getNavigationIndex(e.code, selectionIndex, programList.length)
     );
   };
 
@@ -50,14 +50,16 @@ const Carousel = ({ programList }: ICarouselProps) => {
   }, [selectionIndex, programList]);
 
   return (
-    <ol className={`program-list ${selectionIndex > 0 ? 'translate' : ''}`}>
+    <ol className={`carousel ${selectionIndex > 0 ? 'carousel--shift' : ''}`}>
       {programList.map((p: Program, i) => {
         if (i < range.min || i > range.max) return;
         return (
           <li
             key={`program-${p.id}`}
             onClick={() => handleSelect(i)}
-            className={`program-card ${i === selectionIndex ? 'selected' : ''}`}
+            className={`carousel__program ${
+              i === selectionIndex ? 'carousel__program--selected' : ''
+            }`}
             aria-label={p.title}
             style={{ backgroundImage: `url("${p.image}")` }}
           />

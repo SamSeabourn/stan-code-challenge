@@ -1,4 +1,4 @@
-export const navigationHandler = (
+export const getNavigationIndex = (
   keyCode: string,
   currentIndex: number,
   programCount: number

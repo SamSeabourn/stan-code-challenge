@@ -7,7 +7,10 @@ const Header = () => {
   return (
     <div className="navbar">
       <Link to="/home">
-        <img className="logo" src={logo} />
+        <img
+          className="logo"
+          src={logo}
+        />
       </Link>
       <NavLinks />
     </div>
